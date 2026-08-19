@@ -4,13 +4,13 @@ class Solution {
         for(int i=1;i<=n;i++){
             
             if(i%3==0 && i%5!=0){
-                arr.add(i-1,"Fizz");
+                arr.add("Fizz");
             }
             else if(i%5==0 && i%3!=0){
-                arr.add(i-1,"Buzz");
+                arr.add("Buzz");
             }
             else if(i%15==0){
-                arr.add(i-1,"FizzBuzz");
+                arr.add("FizzBuzz");
             }
             else{
              arr.add(String.valueOf(i));
