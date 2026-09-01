@@ -7,8 +7,9 @@ class Solution {
             int sum =0;
             for(int j=0;j<m;j++){
                 sum += accounts[i][j];
-                maxSum = Math.max(sum,maxSum);
+                
             }
+            maxSum = Math.max(sum,maxSum);
         }
         return maxSum;
         
