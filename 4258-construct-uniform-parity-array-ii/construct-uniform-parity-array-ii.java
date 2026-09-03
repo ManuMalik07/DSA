@@ -7,7 +7,7 @@ class Solution {
             if(nums1[i]%2==0){
                 counteven++;
             }
-            if(nums1[i]<smallestOdd){
+            if(nums1[i]%2 !=0 && nums1[i]<smallestOdd){
                 smallestOdd= nums1[i];
             }
         }
