@@ -2,16 +2,16 @@ class Solution {
     public int totalNumbers(int[] digits) {
         int n = digits.length;
         // first Approaach
-        int countodd=0;
-        int counteven=0;
-        for(int i=0;i<n;i++){
-            if( digits[i]%2 !=0){
-                countodd++;
-            }
-        }
-        if(countodd==n){
-            return 0;
-        }
+        // int countodd=0;
+        // int counteven=0;
+        // for(int i=0;i<n;i++){
+        //     if( digits[i]%2 !=0){
+        //         countodd++;
+        //     }
+        // }
+        // if(countodd==n){
+        //     return 0;
+        // }
         int[] freq = new int[10];
         for(int i=0;i<n;i++){
             freq[digits[i]]++;
