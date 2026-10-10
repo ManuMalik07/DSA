@@ -55,6 +55,31 @@ class Solution {
 
             return ans;
 
+
+
+
+        // PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        // for (int i = 0; i < n; i++) {
+        //     pq.offer(Math.abs(nums1[i] - nums2[i]));
+        // }
+
+        // long K = (long) k1 + k2;
+
+        // while (K > 0 && pq.peek() > 0) {
+        //     int largestDiff = pq.poll();
+        //     pq.offer(largestDiff - 1);
+        //     K--;
+        // }
+
+        // long result = 0;
+        // while (!pq.isEmpty()) {
+        //     long d = pq.poll();
+        //     result += d * d;
+        // }
+
+        // return result;   
+        // this will give TLE k>0 10power 9
+
         
     }
 }
