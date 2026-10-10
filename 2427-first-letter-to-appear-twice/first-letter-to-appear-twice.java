@@ -1,7 +1,7 @@
 class Solution {
     public char repeatedCharacter(String s) {
         int n  = s.length();
-        char ans='a';
+        char ans=' ';
         Set<Character> set = new HashSet<>();
         for(int i=0;i<n;i++){
             if(set.contains(s.charAt(i))){
