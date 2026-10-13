@@ -18,23 +18,36 @@ class Solution {
 
 
         // Slinding window Approach 
-        int i=0,j=0,sum=0;
-        while(j<n && sum<target){
-            sum += arr[j];
-            j++;
-        }
-        j--;
-        while(j<n && i<n){
-            int len = j-i+1;
-            if(sum>=target)minlength = Math.min(minlength, len);
-            sum -=arr[i];
-            i++;
-            j++;
-            while(j<n && sum<target){
-                sum +=arr[j++];
-            }
-            j--;
+        // int i=0,j=0,sum=0;
+        // while(j<n && sum<target){
+        //     sum += arr[j];
+        //     j++;
+        // }
+        // j--;
+        // while(j<n && i<n){
+        //     int len = j-i+1;
+        //     if(sum>=target)minlength = Math.min(minlength, len);
+        //     sum -=arr[i];
+        //     i++;
+        //     j++;
+        //     while(j<n && sum<target){
+        //         sum +=arr[j++];
+        //     }
+        //     j--;
             
+        // }
+
+
+        // more simmpler version 
+        int i=0,sum=0;
+        for (int j = 0; j < n; j++) {
+            sum += arr[j];
+
+            while (sum >= target) {
+                minlength = Math.min(minlength, j - i + 1);
+                sum -= arr[i];
+                i++;
+            }
         }
         if(minlength == Integer.MAX_VALUE){
             return 0;
